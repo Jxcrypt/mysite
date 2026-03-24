@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My site</title>
   <style>
     body {
       margin: 0;
@@ -10,17 +9,34 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
+      flex-direction: column;
     }
-    img {
+
+    img.main-image {
       max-width: 100%;
-      max-height: 100%;
+      max-height: 90vh;
+    }
+
+    .counter {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
     }
   </style>
 </head>
+
 <body>
-  <img src="image.jpg" alt="image">
+
+  <!-- TON IMAGE -->
+  <img src="image.jpg" class="main-image">
+
+  <!-- COMPTEUR -->
+  <div class="counter">
+    <a href="https://www.hitwebcounter.com/" target="_blank">
+      <img src="https://hitwebcounter.com/counter/counter.php?page=21484605&style=0038&nbdigits=7&type=page&initCount=0" border="0">
+    </a>
+  </div>
+
 </body>
 </html>
-<!-- hitwebcounter Code START -->
-<a href="https://www.hitwebcounter.com/" target="_blank">
-<img src="https://hitwebcounter.com/counter/counter.php?page=21484605&style=0038&nbdigits=7&type=page&initCount=0" title="Free Tools" Alt="Free Tools"   border="0" /></a> 
